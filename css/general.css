@@ -1,6 +1,11 @@
 /* Main Colors */
 :root {
-  --primary-color: #e9bf59;
+  --primary-color: #e9bf59;  
+}
+
+*,
+* > *{
+  border: 1px solid black;
 }
 
 
