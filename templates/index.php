@@ -6,7 +6,7 @@
 			</a>
 		</div>
 		<div class="visibledevice">
-			<p class="slidy" style="color:#0e0e0e;font-size: 20px;text-align: center;font-weight: 700;font-family: 'Archivo Black', sans-serif;line-height: 37px;margin-top: -20px;"><span style="font-size: 50px;">TIANGUIS</span><br><span style="font-size: 30px;">RESTAURANTES</span><br><span style="font-size: 43px;">MERCADOS</span><br><span style="font-size: 53px;line-height: 55px;">LOCALES</span><br><span style="font-size: 39px;color:#fff;">CERCA DE TI</span></p>
+			<p class="slidy" style="color:#0e0e0e;font-size: 20px;text-align: center;font-weight: 700;font-family: 'Archivo Black', sans-serif;line-height: 37px;margin-top: -20px;"><span style="font-size: 50px;">TIANGUISs</span><br><span style="font-size: 30px;">RESTAURANTES</span><br><span style="font-size: 43px;">MERCADOS</span><br><span style="font-size: 53px;line-height: 55px;">LOCALES</span><br><span style="font-size: 39px;color:#fff;">CERCA DE TI</span></p>
 		</div>
 		<div class="visibledesk">
 			<br>
