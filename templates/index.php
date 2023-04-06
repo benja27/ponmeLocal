@@ -12,7 +12,7 @@
 			<br>
 			<p style="opacity: 0;font-size:  calc(70px - 4vw);">O<p>
 			<div class="slidy" style="display: flex;align-items: center;justify-content: center;">
-				<p style="color:#0e0e0e;font-size: 40px;text-align: center;font-weight: 700;font-family: 'Archivo Black', sans-serif;line-height: 4.1vw;"><span style="font-size:5vw;line-height: 3vw;">TIANGUIS</span><br><span style="font-size: 3vw;">RESTAURANTES</span><br><span style="font-size: 4.3vw;line-height: 2vw;">MERCADOS</span><br><span style="font-size: 5.3vw;line-height: 6vw;">LOCALES</span><br><span style="font-size: 3.8vw;color:#fff;line-height: 2vw;">CERCA DE TI</span></p>
+				<p style="color:#0e0e0e;font-size: 40px;text-align: center;font-weight: 700;font-family: 'Archivo Black', sans-serif;line-height: 4.1vw;"><span style="font-size:5vw;line-height: 3vw;">TIANGUIS</span><br><span style="font-size: 3vw;">RESTAURANTES</span><br><span style="font-size: 4.3vw;line-height: 2vw;">MERCADOS</span><br><span style="font-size: 5.3vw;line-height: 6vw;">LOCALES</span><br><span style="font-size: 3.8vw;color:#fff;line-height: 2vw;">CERCA DE TI y de mi</span></p>
 			</div>
 			<br>
 			<center>
