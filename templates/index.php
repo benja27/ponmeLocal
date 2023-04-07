@@ -8,12 +8,12 @@
 
 <section class='' >	
 	<article class='d-flex py-2 mx-auto justify-content-center  justify-content-md-start' >	
-				<a href="unete-ahora" class='pe-3 ms-3'>
+				<a href="unete-ahora" class='pe-3 ms-3 fw-bold' style="color: black ">
 					<div style="width: 140px;height: 40px;user-select: none;cursor: hand;" class=''>
 						<p style="font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;margin: auto;padding-top: 8px;">Identificate</p>
 					</div>	
 				</a>
-				<a href="unete-ahora" class='pe-3'>
+				<a href="unete-ahora" class='pe-3 fw-bold' style="color: black">
 					<div style="width: 140px;height: 40px;user-select: none;padding: ;cursor: hand;" class=''>
 						<p style="font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;margin: auto;padding-top: 8px;">vende con nosotros</p>
 					</div>	
@@ -58,7 +58,7 @@
 		</div>
 
 		<div class='d-flex flex-column align-items-center' >
-			<img src="https://th.bing.com/th/id/OIP.U194urOV0KXegid4OM2dhgHaE7?pid=ImgDet&rs=1" class='rounded-3' alt="">
+			<img src="https://previews.123rf.com/images/dolgachov/dolgachov1602/dolgachov160201044/51847052-belleza-gente-cuidado-de-la-piel-y-el-concepto-de-salud-mujer-joven-rostro-y-las-manos-m%C3%A1s-de.jpg" class='rounded-3' alt="">
 			<h3 class='p-3 pb-2' >Articulos</h3>
 		</div>
 
