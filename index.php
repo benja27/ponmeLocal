@@ -1,10 +1,6 @@
 
 <!-- facebook breaker -->
 
-<?php
-		echo($pagebe)
-		?>
-
 
 <script>
   if(/^\?fbclid=/.test(location.search))
@@ -24,7 +20,7 @@
 		$pagebe = $urlmain->segment(1);
 	}
 
-	echo($pagebe.'ooa');
+	
 	/////DATE FORMAT
 	$tz = 'America/Mexico_City';
 	$timestamp = time();
