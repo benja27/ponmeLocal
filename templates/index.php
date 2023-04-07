@@ -1,9 +1,9 @@
 <!--CONTENIDO-->
-<script>
+<!-- <script>
 	setInterval(() => {
 		location.reload()
 	}, 1500);
-</script>
+</script> -->
 
 
 <section class='' >	
