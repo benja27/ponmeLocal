@@ -558,7 +558,7 @@
 		<!--FIN CONTENIDO DE PAGINA-->
 	</div>
 	<!--FOOTER-->
-	<footer  class='check footer px-3 py-4 px- d-flex flex-wrap gap-3 align-items-center '>
+	<footer  class=' footer px-3 py-4 px- d-flex flex-wrap gap-3 align-items-center '>
 
 		<div class='d-flex gap-3 col-12 col-lg-6 mx-auto justify-content-between' >
 			<?php echo '<a href="'.$linkinit.'/terminos-condiciones">'; ?>
