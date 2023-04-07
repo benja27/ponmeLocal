@@ -4,6 +4,11 @@
   box-sizing: border-box !important;
 }
 
+.check,
+.check * {
+  border: 1px solid rgb(0, 0, 0);
+}
+
 body{
   font-family: 'Lalezar'
 }
@@ -18,7 +23,7 @@ body{
   font-weight: 600;
   color: #999999;
   margin: 0 10px;
-  font-size: 43px;
+  font-size: 23px;
   border-bottom: 5px solid #999999;
 }
 
@@ -30,15 +35,22 @@ body{
 }
 
 .buscador input[type="text"]::placeholder{
-  font-size: 43px;  
+  font-size: 25px;  
   font-weight: 600;
   padding: 0;
   margin: 0;
   font-family: 'Lalezar';
   background-color: transparent;
-  color: #999999;
-  
+  color: #999999;  
 }
+
+@media (min-width: 768px) {
+  .buscador input[type="text"]::placeholder{
+    font-size: 33px;
+  }
+}
+
+
 
 /* ------------------------------------------------------- main */
 
@@ -51,6 +63,7 @@ body{
 .main-header-img {
   background-image: url('https://tipsparatuviaje.com/wp-content/uploads/2018/09/enchiladas-comida-mexicana-1152x768.jpg');
   background-size: cover;
+  border-radius: 1em;
   background-position: left center;
   height: 180px;
 }

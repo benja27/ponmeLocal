@@ -1,14 +1,14 @@
 <!--CONTENIDO-->
-<!-- <script>
+<script>
 	setInterval(() => {
 		location.reload()
 	}, 1500);
-</script> -->
+</script>
 
 
 <section class='' >	
-	<article class='d-flex px-5 p-2 ' >	
-				<a href="unete-ahora" class='pe-3'>
+	<article class='d-flex py-2 mx-auto justify-content-center  justify-content-md-start' >	
+				<a href="unete-ahora" class='pe-3 ms-3'>
 					<div style="width: 140px;height: 40px;user-select: none;cursor: hand;" class=''>
 						<p style="font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;margin: auto;padding-top: 8px;">Identificate</p>
 					</div>	
@@ -39,12 +39,15 @@
 <!-- main content -->
 <main class='' >
 
-	<article class='d-flex header-main px-5 py-5' >
-		<div class='col-7 d-flex align-items-center ' >
+	<article class='d-flex flex-wrap header-main px-5 py-5' >
+
+		<div class='col-12 col-sm-7 d-flex align-items-center pb-3 tet-sm-center' >
 			<h3 class='pe-4 fs-2' >!Las mejores <span>Quesadillas Fritas</span> en Ponme Local! <br> con o sin queso </h3>
 		</div>
-		<div class='col-5 main-header-img' >			
+
+		<div class='col-12 col-sm-5 main-header-img' >			
 		</div>
+
 	</article>
 
 	<article class='main-categories pt-3 px-2 mx-auto' >
