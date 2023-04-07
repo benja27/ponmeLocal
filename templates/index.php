@@ -72,7 +72,7 @@
 	<article class=' nuestra-seleccion-container ' >
 		<h2 class='col-10 mx-auto pt-3' >Nuestra Seleccion</h2>
 		
-		<div class='nuestra-selecction mx-auto gap-1 col-10' >		
+		<div class='nuestra-selecction mx-auto  col-10' >		
 			<div class='d-flex flex-column align-items-center' >
 				<img src="https://th.bing.com/th/id/OIP.stiDu_94VmHdC0aSSfApowHaEu?pid=ImgDet&rs" class='rounded-3' alt="">
 				<h5 class='p-1' >Hamburguesas</h5>
