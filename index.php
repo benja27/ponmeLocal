@@ -523,7 +523,7 @@
 	<meta property="og:image:height" content="560" />
 	<link rel="canonical" href="https://ponmelocal.com" />
 </head>
-<body style=";margin: 0px">
+<body style="margin: 0px">
 	<div class="visibledesk">
 		<div id="balanza"></div>
 	</div>
