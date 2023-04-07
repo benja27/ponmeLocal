@@ -26,7 +26,8 @@
 				<?php
 					require_once('connectvar.php');
 					if (isset($_POST["submit"])){
-						$dbc = mysqli_connect(MI_HOST,MI_USER,MI_PASSWORD,MI_DB);
+						// $dbc = mysqli_connect(MI_HOST,MI_USER,MI_PASSWORD,MI_DB);
+						$dbc = mysqli_connect("localhost","root","","local");
 						echo'<div style="position:absolute;top: 500px;width: 900;>"';
 						//CHECK CONNECTION
 						if ($dbc) {

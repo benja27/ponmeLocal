@@ -1,0 +1,108 @@
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body{
+  font-family: 'Lalezar'
+}
+
+/* ------------------------------- header busca lo que nesecites */
+
+.index-header{
+  background-color: #EBBE69;
+  /* background-color: black; */
+}
+.main-title{
+  font-weight: 600;
+  color: #999999;
+  margin: 0 10px;
+  font-size: 43px;
+  border-bottom: 5px solid #999999;
+}
+
+.buscador input[type="text"]{
+  width: 100%;    
+  color: black;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.buscador input[type="text"]::placeholder{
+  font-size: 43px;  
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lalezar';
+  background-color: transparent;
+  color: #999999;
+  
+}
+
+/* ------------------------------------------------------- main */
+
+.header-main {
+  background-color: #F15A24;
+}
+.header-main div h3 span {
+  color: #EBBE69;
+}
+.main-header-img {
+  background-image: url('https://tipsparatuviaje.com/wp-content/uploads/2018/09/enchiladas-comida-mexicana-1152x768.jpg');
+  background-size: cover;
+  background-position: left center;
+  height: 180px;
+}
+
+.main-categories {
+  display: grid;  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+}
+
+.main-categories div img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.nuestra-seleccion-container {
+  background-color: #EBBE69;
+}
+
+.nuestra-selecction{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+}
+.nuestra-selecction div img{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.populares{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  justify-items: center;
+}
+.populares div img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: red;
+}
+
+/* ------------------- footer */
+
+.footer {
+  background-color: black;
+  color: #EBBE69;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.redes i {
+  font-size: 30px;
+}
