@@ -1,6 +1,11 @@
 
 <!-- facebook breaker -->
 
+<?php
+		echo($pagebe)
+		?>
+
+
 <script>
   if(/^\?fbclid=/.test(location.search))
      location.replace(location.href.replace(/\?fbclid.+/, ""));
@@ -10,15 +15,16 @@
 	require_once ('codebase/simpleURL.php');
 	/////URL CHECK
 	$urlmain = new simpleURL($_SERVER['HTTP_HOST']);
-	if( !$urlmain->segment(2))
+	if( !$urlmain->segment(1))
 	{
 		$pagebe = '';
 	}
 	else
 	{
-		$pagebe = $urlmain->segment(2);
+		$pagebe = $urlmain->segment(1);
 	}
 
+	echo($pagebe.'ooa');
 	/////DATE FORMAT
 	$tz = 'America/Mexico_City';
 	$timestamp = time();
@@ -610,7 +616,7 @@
 		}
 	?>
 
-
+		
 
 
 	////AÑO DE PRIVACIDAD
