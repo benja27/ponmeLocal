@@ -11,13 +11,13 @@
 	require_once ('codebase/simpleURL.php');
 	/////URL CHECK
 	$urlmain = new simpleURL($_SERVER['HTTP_HOST']);
-	if( !$urlmain->segment(1))
+	if( !$urlmain->segment(2))
 	{
 		$pagebe = '';
 	}
 	else
 	{
-		$pagebe = $urlmain->segment(1);
+		$pagebe = $urlmain->segment(2);
 	}
 
 	

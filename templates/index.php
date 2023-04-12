@@ -6,6 +6,9 @@
 </script> -->
 
 
+
+<!-- ------------------------------------section IDENTIFICATE Y VENTE CON NOSOTROS Y BUSCADOR -->
+
 <section class='' >	
 	<article class='d-flex py-2 mx-auto justify-content-center  justify-content-md-start' >	
 				<a href="unete-ahora" class='pe-3 ms-3 fw-bold' style="color: black ">
@@ -20,7 +23,7 @@
 				</a>				
 	</article>
 	
-	<!-- buscador -->
+	<!-- BUSCADOR -->
 	<article class="d-flex flex-wrap index-header px-5 p-3" >
 
 		<div class="col-12 col-lg-3 d-flex align-items-end justify-content-center" >
@@ -36,16 +39,17 @@
 
 </section>	
 
-<!-- main content -->
-<main class='' >
+<!------------------------------------------------------------------ MAIN CONTENT  -->
+<main class='check' >
 
-	<article class='d-flex flex-wrap header-main px-5 py-5' >
-
-		<div class='col-12 col-sm-7 d-flex align-items-center pb-3 tet-sm-center' >
-			<h3 class='pe-4 fs-2' >!Las mejores <span>Quesadillas Fritas</span> en Ponme Local! <br> con o sin queso </h3>
-		</div>
-
-		<div class='col-12 col-sm-5 main-header-img' >			
+	<article class='header-main' >
+		<div class="d-flex flex-wrap justify-content-between px-5 py-5 hero mx-auto">
+			<div class='col-12 col-sm-7 d-flex align-items-center pb-3 tet-sm-center' >
+				<h3 class='pe-4 fs-2 hero-text' >!Las mejores <span>Quesadillas Fritas</span> en Ponme Local! <br> con o sin queso </h3>
+			</div>
+	
+			<div class='col-12 col-sm-5 main-header-img' >			
+			</div>			
 		</div>
 
 	</article>
