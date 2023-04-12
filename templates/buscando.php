@@ -1,7 +1,8 @@
 <!--CONTENIDO-->
 <div class="right_c2" style="padding-top: 0px;padding-bottom: 120px;">
 	<div>
-		<center>
+		<center> 
+			
 			<!--LOGO-->
 			<div class="visibledesk">
 				<?php echo '<a href="'.$linkinit.'">';?>
