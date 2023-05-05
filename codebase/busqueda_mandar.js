@@ -1,5 +1,12 @@
 function mandarforma() {
 
+
+	// alert("aceptas compartir tu ubi")
+
+	// let latitutde =  2311231321
+	// let longitud = 654132132151
+
+
 	busquedaes = $('#busqueda').val();
 	if(busquedaes != "")
 	{

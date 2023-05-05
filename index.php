@@ -273,6 +273,9 @@
 						}
 					}
 				}
+
+
+				
 				///SI ENCUENTRA
 				if($sies == true)
 				{
@@ -535,7 +538,7 @@
 		switch ($pagebe)
 		{
 			case '' :
-			require_once('templates/index.php');
+			require_once('templates/index.php');			
 			break;
 			case 'contactanos' :
 			require_once('templates/contactanos.php');
