@@ -1,4 +1,5 @@
 <!--CONTENIDO-->
+
 <div style="width: 100%;padding-top: 40px;padding-bottom: 120px;padding-left: 50px;padding-right: 50px;">
 	<center>
 		<?php echo '<a href="'.$linkinit.'">';?>

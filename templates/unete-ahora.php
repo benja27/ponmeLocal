@@ -1,3 +1,93 @@
+<head>
+    <title>Add Map</title>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+	<body>
+	<style>
+      #map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+    </style>
+	
+	
+    <!--The div element for the map -->
+    
+    
+
+   
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU2V4MODTl1ivjUpFpwxd8o77DsuYh4Rw&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+    <script>
+  function initMap() {  
+  	const uluru = { lat: 19.40287, lng: -99.01571 };
+  	// The map, centered at Uluru
+  	const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: uluru,
+  });
+
+	
+	let eve = 0 
+	console.log(eve)
+	
+  map.addListener('click', function(event) {
+  var latLng = event.latLng;
+	
+  if (confirm('¿Es esta es la ubicación de tu negocio? Latitud: ' + latLng.lat() + ', Longitud: ' + latLng.lng())) {
+    // Si el usuario confirma que esta es su ubicación, llama a la función getLocation() para obtener la geolocalización del punto seleccionado.
+    getLocation(latLng);
+  }
+
+	eve = latLng	
+	console.log(eve)
+
+	let lat = document.getElementById("lat")
+	lat.value= eve.lat()
+	document.getElementById("lon").value = eve.lng()
+	// console.log(lat)
+
+});
+
+	setInterval(() => {
+		console.log(eve.lat())		
+	}, 5000);
+
+
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+function getLocation(latLng) {
+  var geocoder = new google.maps.Geocoder();
+  geocoder.geocode({'location': latLng}, function(results, status) {
+    if (status === 'OK') {
+      if (results[0]) {
+        alert(results[0].formatted_address);
+      } else {
+        alert('No se encontró ninguna dirección para esta ubicación.');
+      }
+    } else {
+      alert('Geocode falló debido a: ' + status);
+    }
+  });
+}
+
+window.initMap = initMap;
+    </script>
+
+
+
+
+
 <!--CONTENIDO-->
 <div style="width: 100%;padding-top: 40px;padding-bottom: 120px;padding-left: 30px;padding-right: 30px;">
 	<center>
@@ -37,7 +127,7 @@
 				
 			</div>
 			<br>
-			<div class="container_f" style="max-width: 500px;">
+			<div class="container_f check" style="max-width: 500px;">
 				<div class="container-drop-choose">
 					<select class="selection-dropdown-choose" id="envios" name="envios">
 						<option value="Default">Envio comida*</option>
@@ -181,6 +271,26 @@
 			<input class="inputes" style="width: 250px;height: 60px;border-bottom: 3px solid #0e0e0e;outline:0;text-align: center;color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 20px;background-color: var(--primary-color);" type="text" id="telefono-local" name="telefono-local" placeholder="TELÉFONO*" value=""/>
 			
 			<input class="inputes" style="width: 250px;height: 60px;border-bottom: 3px solid #0e0e0e;outline:0;text-align: center;color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 20px;background-color: var(--primary-color);" type="text" id="whatsapp-local" name="whatsapp-local" placeholder="WHATSAAP" value=""/>
+			
+			
+			
+
+
+			<br><br>
+			<h3>Busca la Ubicacion de tu Local en el mapa para guardar la sus coordenadas</h3>
+			<div id="map"></div>
+
+					<script>
+						let a = 1
+					</script>
+
+			<input type="number" name="lat" step="0.000000000000001" id="lat" value="0" style="display='none'" >
+			<input type="number" name="lon" step="0.000000000000001" id="lon" value="0" style="display='none'" >
+
+
+			
+			
+			
 			<br>
 			<br>
 			<div style="max-width: 500px;">
@@ -196,11 +306,14 @@
 			</p>
 			<br>
 			<br>
-			<div onclick="mandarformalocal()" style="width: 140px;height: 40px;background-color: #0e0e0e;user-select: none;padding: 10px;cursor: hand;">
+			<!-- mandarformaloca() -->
+			<div onclick="mardarformalocal" style="width: 140px;height: 40px;background-color: #0e0e0e;user-select: none;padding: 10px;cursor: hand;">
 					<p style="color: #fff;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;margin: auto;padding-top: 8px;">Enviar</p>
 			</div>
 			<input id="enviadoes" name="enviadoes" type="hidden" value="">
+			<input type="submit" value="enviar">
 		</form>
 	</center>
 </div>
+</body>
 <!--FIN CONTENIDO-->

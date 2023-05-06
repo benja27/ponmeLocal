@@ -1,4 +1,7 @@
-<!-- facebook breaker -->
+
+<!-- facebook breaker benja -->
+
+
 <script>
   if(/^\?fbclid=/.test(location.search))
      location.replace(location.href.replace(/\?fbclid.+/, ""));
@@ -17,6 +20,7 @@
 		$pagebe = $urlmain->segment(1);
 	}
 
+	
 	/////DATE FORMAT
 	$tz = 'America/Mexico_City';
 	$timestamp = time();
@@ -269,6 +273,9 @@
 						}
 					}
 				}
+
+
+				
 				///SI ENCUENTRA
 				if($sies == true)
 				{
@@ -471,6 +478,7 @@
 		}
 	}
 ?>
+
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" lang="en">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -505,18 +513,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700|Archivo+Black:400,700|Lalezar:400,700|Roboto:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'>	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/7d931a3f92.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/update.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<?php
-		echo '<link rel="stylesheet" type="text/css" href="'.$linkinit.'/css/general.css?'.$stamp_time.'">';
+		// echo '<link rel="stylesheet" type="text/css" href="'.$linkinit.'/css/general.css?'.$stamp_time.'">';
 	?>
 	<meta property="og:image:width" content="900" />
 	<meta property="og:image:height" content="560" />
 	<link rel="canonical" href="https://ponmelocal.com" />
 </head>
-<body style="background-color: var(--primary-color);margin: 0px 0px 0px 0px;">
+<body style="margin: 0px">
 	<div class="visibledesk">
 		<div id="balanza"></div>
 	</div>
@@ -526,7 +538,7 @@
 		switch ($pagebe)
 		{
 			case '' :
-			require_once('templates/index.php');
+			require_once('templates/index.php');			
 			break;
 			case 'contactanos' :
 			require_once('templates/contactanos.php');
@@ -551,60 +563,35 @@
 		<!--FIN CONTENIDO DE PAGINA-->
 	</div>
 	<!--FOOTER-->
-	<div style="padding-bottom: 80px;padding-top: 0px;">
-		<div class="visibledesk">
-			<center>
-				<table>
-					<tr>
-						<td>
-							<p style="color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
-								<strong>&copy; PonmeLocal <span id="anobe">2019</span>. Todos los derechos reservados.</strong>
-							</p>
-						</td>
-						<td>
-							<p style="opacity: 0;">----</p>
-						</td>
-						<td>
-							<?php echo '<a href="'.$linkinit.'/contactanos">'; ?>
-								<p style="color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
-									<strong>CONT&Aacute;CTANOS</strong>
-								</p>
-							</a>
-						</td>
-						<td>
-							<p style="opacity: 0;">---</p>
-						</td>
-						<td>
-							<?php echo '<a href="'.$linkinit.'/terminos-condiciones">'; ?>
-								<p style="color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
+	<footer  class=' footer px-3 py-4 px- d-flex flex-wrap gap-3 align-items-center '>
+
+		<div class='d-flex gap-3 col-12 col-lg-6 mx-auto justify-content-between' >
+			<?php echo '<a href="'.$linkinit.'/terminos-condiciones">'; ?>
+								<p style="color: #EBBE69;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;" class='m-0' >
 									<strong>T&Eacute;RMINOS Y CONDICIONES</strong>
 								</p>
-							</a>
-						</td>
-					</tr>
-				</table>
-			</center>
-		</div>
-		<div class="visibledevice">
-			<center>
-				<?php echo '<a href="'.$linkinit.'/contactanos">'; ?>
-					<p style="color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
-						<strong>CONT&Aacute;CTANOS</strong>
-					</p>
-				</a>
-				<?php echo '<a href="'.$linkinit.'/terminos-condiciones">'; ?>
-					<p style="color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
-						<strong>T&Eacute;RMINOS Y CONDICIONES</strong>
-					</p>
-				</a>
-				<br>
-				<p style="color: #0e0e0e;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
-					<strong>&copy; PonmeLocal <span id="anobe2">2019</span>. Todos los derechos reservados.</strong>
-				</p>
+			</a>
 
-			</center>
+			<?php echo '<a href="'.$linkinit.'/contactanos">'; ?>
+								<p style="color: #EBBE69;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;" class='m-0'>
+									<strong>CONT&Aacute;CTANOS</strong>
+								</p>
+			</a>						
+			<div class='redes d-flex align-items-center gap-3  justify-content-center' >
+				<i class='fa-brands fa-facebook' ></i>
+				<i class='fa-brands fa-instagram' ></i>
+			</div>
 		</div>
-	</div>
+
+
+	
+		<div class='col-12 col-lg-5 mx-auto d-flex justify-content-center ' >
+			<p style="color: #EBBE69;font-family: 'Lato', sans-serif;font-size: 16px;text-align: center;max-width: 400px;line-height: 30px;">
+									<strong>&copy; PonmeLocal <span id="anobe">2019</span>. Todos los derechos reservados.</strong>
+			</p>
+		</div>		
+		
+	</footer>
 </body>
 <!-- MAIN CODE -->
 <script>
@@ -627,8 +614,15 @@
 			break;
 		}
 	?>
+
+		
+
+
 	////AÑO DE PRIVACIDAD
-	document.getElementById("anobe").innerHTML = new Date().getFullYear();
-	document.getElementById("anobe2").innerHTML = new Date().getFullYear();
+	// document.getElementById("anobe").innerHTML = new Date().getFullYear();
+	// document.getElementById("anobe2").innerHTML = new Date().getFullYear();
 </script>
+
+
+
 </html>

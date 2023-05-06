@@ -1,7 +1,8 @@
 <!--CONTENIDO-->
 <div class="right_c2" style="padding-top: 0px;padding-bottom: 120px;">
 	<div>
-		<center>
+		<center> 
+			
 			<!--LOGO-->
 			<div class="visibledesk">
 				<?php echo '<a href="'.$linkinit.'">';?>
@@ -242,7 +243,7 @@
 								<div class="in-direction">
 								<p style="font-size: 20px;color: #0e0e0e;text-align: left;font-family: '.$picker.'Roboto'.$picker.', sans-serif;padding: 0px 20px 0px 20px;">'.$calle_local[$i].' '.$numero_local[$i].' '.$colonia_local[$i].' '.$delegacion_local[$i].' '.$cp_local[$i].' '.$ciudad_local[$i].'</p>
 								</div>
-								<a target="_blank" href="https://www.google.com/maps/search/'.$g_calle.'+'.$numero_local[$i].'+'.$g_colonia.'+'.$g_delegacion.'+'.$cp_local[$i].'+'.$ciudad_local[$i].'">
+								<a target="_blank" href="https://www.google.com/maps/search/'.$g_calle.'+'.$numero_local[$i].'+'.$g_colonia.'+'.$g_delegacion.'+'.$ciudad_local[$i].'">
 								<div style="width: 140px;height: 40px;background-color: #0e0e0e;user-select: none;padding: 10px;cursor: hand;">
 								<p style="color: #fff;font-family: '.$picker.'Lato'.$picker.', sans-serif;font-size: 16px;text-align: center;margin: auto;padding-top: 8px;">Ver Mapa</p>
 								</div>

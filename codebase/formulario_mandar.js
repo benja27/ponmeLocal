@@ -21,6 +21,7 @@ function mandarformalocal() {
 	whatsapp = $('#whatsapp-local').val();
 	emaileste = $('#mail-local').val();
 	aceptoterminos = $('#aceptoterminos:checkbox:checked').length > 0;
+	
 
 	contadordias = 0;
 

@@ -1,0 +1,167 @@
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.check,
+.check * {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+body{
+  font-family: 'Lalezar'
+}
+
+/* ------------------------------- header busca lo que nesecites */
+
+.index-header{
+  background-color: #EBBE69;
+  /* background-color: black; */
+}
+.main-title{
+  font-weight: 600;
+  color: #999999;
+  margin: 0 10px;
+  font-size: 23px;
+  border-bottom: 5px solid #999999;
+}
+
+.buscador input[type="text"]{
+  width: 100%;    
+  color: black;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.buscador input[type="text"]::placeholder{
+  font-size: 25px;  
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lalezar';
+  background-color: transparent;
+  color: #999999;  
+}
+
+@media (min-width: 768px) {
+  .buscador input[type="text"]::placeholder{
+    font-size: 33px;
+  }
+}
+
+
+
+/* ------------------------------------------------------- main */
+
+.header-main {
+  background-color: #F15A24;
+}
+
+.main-header-img {
+  background-image: url('https://tipsparatuviaje.com/wp-content/uploads/2018/09/enchiladas-comida-mexicana-1152x768.jpg');
+  background-size: cover;
+  border-radius: 1em;
+  background-position: left center;
+  height: 180px;
+}
+@media (min-width: 1200px) {  
+  .main-header-img{
+    height: 300px;
+    
+  }
+  .hero{
+    height: 400px;
+  }
+  .hero > div > h3{
+    font-size: 50px !important;
+  }
+  
+}
+
+.header-main div h3 span {
+  color: #EBBE69;
+}
+
+.hero{
+  max-width: 1700px;
+}
+/* ******* */
+
+.main-categories {
+  /* display: grid;  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));     */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.main-categories div img {  
+  min-width: 300px;  
+  width: 500px;
+  flex: 1 1 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.nuestra-seleccion-container {
+  background-color: #EBBE69;
+}
+
+/*  */
+.nuestra-selecction{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nuestra-selecction div{
+  max-width: 20%;
+  min-width: 150px;
+}
+
+.nuestra-selecction div img{
+  /* width: 3000px;
+  max-width: 15vw; */
+  width: 100%;
+  /* min-width: 300px; */
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.populares{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.populares div{
+  min-width: 100px;
+  width: 160px;
+}
+
+.populares div img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: red;
+}
+
+/* ------------------- footer */
+
+.footer {
+  background-color: black;
+  color: #EBBE69;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.redes i {
+  font-size: 30px;
+}

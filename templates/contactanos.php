@@ -1,7 +1,7 @@
 <!--CONTENIDO-->
 <div style="width: 100%;padding-top: 40px;padding-bottom: 120px;padding-left: 50px;padding-right: 50px;">
 	<center>
-		<?php echo '<a href="'.$linkinit.'">';?>
+		<!-- <?php echo '<a href="'.$linkinit.'">';?> -->
 		<h1 class="slidy2" style="color:#fff;font-size: 32px;text-align: center;font-weight: 700;font-family: 'Lalezar', sans-serif;"><span style="color: #0e0e0e;">PONME</span>LOCAL<span style="font-size: 18px;font-weight: 400;color: #0e0e0e;"> &copy;</span></h1>
 		</a>
 		<h1 style="color:#0e0e0e;font-size: 20px;text-align: center;font-weight: 700;font-family: 'Archivo Black', sans-serif;">
