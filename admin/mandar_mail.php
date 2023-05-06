@@ -55,6 +55,15 @@ if($_POST['dia_domingo'] == true)
 	$diasa .= "Domingo ";
 }
 
+
+// =============================================
+
+$sql = "INSERT INTO localito (id, tipo, nombre, classy, dias, abierto, cerrado, calle, numedi, colonia, delegacion, ciudad, copos, telefono, envios, palclaves, facedi, instadi, googlem, googleb, dweb, menud) VALUES ('$idesma', '$tipodedisplay', '$nombrelo', '$claselo', '$dias', '$abierto', '$cerrado', '$callelo', '$numelo', '$colonialo', '$delegacionlo', '$ciudadlo', '$coposlo', '$tello', '$envio', '$palclo', '$facelo', '$instalo', '$maplo', '0', '$paginalo', '$menulo')";
+				mysqli_query($dbc, $sql);
+
+
+// =============================================
+
 $subject = 'PonmeLocal Nuevo usuario: '.$nombre;
 $subject= utf8_decode($subject);
 

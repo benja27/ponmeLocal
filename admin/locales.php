@@ -34,6 +34,8 @@
 		echo'<link rel="stylesheet" type="text/css" href="'.$linktotal.'/css/general.css">';
 	?>
 </head>
+
+
 <body style="background-color: #fff;">
 <div style="position: fixed;height: 100%;z-index: 99999;left: -10px;">
 		<div style="background-color: #4cc3a1;padding-left: 50px;padding-top: 30px;width: 250px;height: 100%;">
@@ -93,9 +95,11 @@
 							array_push($cui_blog, $baseot["id"]);
 							$conteo ++;
 						}
+
+						
 						if($conteo > 0)
 						{
-							echo '<table>';
+							echo '<table class="" >';
 							echo '<tr style="border-bottom: 1px solid #305e7b;">';
 							echo '<td style="width:60px;">';
 							echo '<h1 style="font-size: 15px;color:#4cc3a1;text-align: left;">#</h1>';
@@ -105,11 +109,23 @@
 							echo '</td>';
 							echo '<td style="width:50px;">';
 							echo '<p style="font-size: 15px;color:#305e7b;text-align: left;"><span style="opacity:0;">-</span></p>';
+							// echo '<h1 style="font-size: 15px;color:#4cc3a1;text-align: left;">Nombre</h1>';
 							echo '</td>';
 							echo '<td style="width:100px;">';
 							echo '<p style="font-size: 15px;color:#305e7b;text-align: left;"><span style="opacity:0;">-</span></p>';
+							// echo '<h1 style="font-size: 15px;color:#4cc3a1;text-align: left;">Nombre</h1>';
 							echo '</td>';
+							echo '<td style="width:100px;">';
+							echo '<p style="font-size: 15px;color:#305e7b;text-align: left;"><span style="opacity:0;">hola</span></p>';
+							// echo '<h1 style="font-size: 15px;color:#4cc3a1;text-align: left;">Nombre</h1>';
+							echo '</td>';
+							echo '<td style="width:100px;">';
+							echo '<p style="font-size: 15px;color:#305e7b;text-align: left;"><span style="opacity:0;">hola</span></p>';
+							// echo '<h1 style="font-size: 15px;color:#4cc3a1;text-align: left;">Nombre</h1>';
+							echo '</td>';
+							
 							echo '</tr>';
+							
 							for ($i=0; $i < $conteo; $i++) 
 							{
 								echo '<tr style="border-bottom: 1px solid #999999;">';
@@ -127,7 +143,12 @@
 								echo '<td>';
 								echo '<div style="border-radius: 10px;margin-right: auto;margin-left: auto;border: 2px solid;border-color: #4cc3a1;width: 40px;height: 35px;background-color: #4cc3a1;padding-top: 6px;"><a href="local_borrar.php?selec='.$cui_blog[$i].'"><center><i class="material-icons" style="font-size:25px;color: #ffffff;display: inline-flex;vertical-align: middle;padding-top: 0px;">delete</i></center></a></div>';
 								echo '</td>';
+								echo '<td>';
+								echo '<div style="border-radius: 10px;margin-right: auto;margin-left: auto;border: 2px solid;border-color: #4cc3a1;width: 40px;height: 35px;background-color: #4cc3a1;padding-top: 6px;"><a href="local_crear.php?selec='.$cui_blog[$i].'"><center><i class="material-icons" style="font-size:25px;color: #ffffff;display: inline-flex;vertical-align: middle;padding-top: 0px;">check</i></center></a></div>';
+								echo '</td>';
 								echo '</tr>';
+								
+								
 							}
 							echo '</table>';
 						}

@@ -1,9 +1,6 @@
 <!--CONTENIDO-->
-<!-- <script>
-	setInterval(() => {
-		location.reload()
-	}, 1500);
-</script> -->
+
+<script src="codebase/geocalizacion.js"></script>
 
 
 
@@ -40,7 +37,7 @@
 </section>	
 
 <!------------------------------------------------------------------ MAIN CONTENT  -->
-<main class='check' >
+<main class='' >
 
 	<article class='header-main' >
 		<div class="d-flex flex-wrap justify-content-between px-5 py-5 hero mx-auto">

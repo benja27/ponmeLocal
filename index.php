@@ -11,13 +11,13 @@
 	require_once ('codebase/simpleURL.php');
 	/////URL CHECK
 	$urlmain = new simpleURL($_SERVER['HTTP_HOST']);
-	if( !$urlmain->segment(2))
+	if( !$urlmain->segment(1))
 	{
 		$pagebe = '';
 	}
 	else
 	{
-		$pagebe = $urlmain->segment(2);
+		$pagebe = $urlmain->segment(1);
 	}
 
 	
@@ -273,6 +273,9 @@
 						}
 					}
 				}
+
+
+				
 				///SI ENCUENTRA
 				if($sies == true)
 				{
@@ -535,7 +538,7 @@
 		switch ($pagebe)
 		{
 			case '' :
-			require_once('templates/index.php');
+			require_once('templates/index.php');			
 			break;
 			case 'contactanos' :
 			require_once('templates/contactanos.php');
@@ -616,8 +619,8 @@
 
 
 	////AÑO DE PRIVACIDAD
-	document.getElementById("anobe").innerHTML = new Date().getFullYear();
-	document.getElementById("anobe2").innerHTML = new Date().getFullYear();
+	// document.getElementById("anobe").innerHTML = new Date().getFullYear();
+	// document.getElementById("anobe2").innerHTML = new Date().getFullYear();
 </script>
 
 
